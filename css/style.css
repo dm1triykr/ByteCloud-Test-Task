@@ -129,7 +129,7 @@ label {
 
 .price-calc-result__providers {
     width: 140px;
-    flex: 1 25%;
+    flex: 1 22%;
 }
 
 .providers {
@@ -170,7 +170,7 @@ label {
 }
 
 .price-calc-result__progress {
-    flex: 2 75%;
+    flex: 2 78%;
     margin-left: 12px;
     margin-top: 9px;
     z-index: -1;
@@ -178,7 +178,16 @@ label {
 }
 
 .progress-meter {
+    background-color: #cacaca !important;
+    border: 1px solid #000;
+    margin-right: 3px;
+    height: 25px !important;
+}
 
+.progress {
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
 }
 
 .progress:not(:last-child) {
