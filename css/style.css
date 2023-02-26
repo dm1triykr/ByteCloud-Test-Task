@@ -124,11 +124,12 @@ label {
 }
 
 .price-calc-result {
-	
+	display: flex;
 }
 
 .price-calc-result__providers {
     width: 140px;
+    flex: 1 25%;
 }
 
 .providers {
@@ -166,4 +167,20 @@ label {
 .providers__logo {
     width: 30px;
     height: auto;
+}
+
+.price-calc-result__progress {
+    flex: 2 75%;
+    margin-left: 12px;
+    margin-top: 9px;
+    z-index: -1;
+    padding: 10px 0 ;
+}
+
+.progress-meter {
+
+}
+
+.progress:not(:last-child) {
+    margin-bottom: 25px;
 }

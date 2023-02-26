@@ -18,19 +18,18 @@
                     <input type="number" id="sliderOutput1" class="sliderOutput">
                     <div class="gb">GB</div>
                 </div>
-                <div class="slider" data-slider data-initial-start="50">
-                    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1" aria-valuemax="1000"></span>
+                <div class="slider" data-slider data-initial-start="0" data-end="1000">
+                    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
                     <span class="slider-fill" data-slider-fill></span>
                 </div>
             </div>
             <div class="price-calc__transfer">
                 <div class="price-calc__label">
                     <label for="sliderOutput2">Transfer:</label>
-                    <!-- <div class="transfer">Transfer:</div> -->
                     <input type="number" id="sliderOutput2" class="sliderOutput">
                     <div class="gb">GB</div>
                 </div>
-                <div class="slider" data-slider data-initial-start="50">
+                <div class="slider" data-slider data-initial-start="0" data-end="1000">
                     <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
                     <span class="slider-fill" data-slider-fill></span>
                 </div>
@@ -61,6 +60,23 @@
                     <div class="providers__logo">
                         <img src="img/logo.png" alt="">
                     </div>
+                </div>
+            </div>
+            <div class="price-calc-result__progress">
+                <div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                    <div class="progress-meter" style="width: 25%"></div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress-meter" style="width: 50%"></div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress-meter" style="width: 50%"></div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress-meter" style="width: 75%"></div>
                 </div>
             </div>
         </output>
