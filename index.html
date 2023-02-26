@@ -45,22 +45,24 @@
                 </div>
                 <div class="providers__row">
                     <div class="providers__label">
-                        <!-- <div class="providers__title">-->bunny<!--</div> -->
-                        <!-- <div class="providers__checkboxes">
-                            <form action="" class="providers__form">
-                                <input type="radio" id="bunnyHDD">
-                                <label for="bunnyHDD">HDD</label>
-                                <input type="radio" id="bunnySSD">
-                                <label for="bunnyHDD">SSD</label>
-                            </form>
-                        </div>   -->
+                        bunny
+                        <fieldset class="providers__radio-buttons">
+                            <input type="radio" name="hdd" value="hdd" id="hdd" required class="providers__radio-button"><label for="hdd">HDD</label>
+                            <input type="radio" name="ssd" value="ssd" id="ssd" class="providers__radio-button"><label for="ssd">SSD</label>
+                        </fieldset>
                     </div>
                     <div class="providers__logo">
                         <img src="img/logo.png" alt="">
                     </div>
                 </div>
                 <div class="providers__row">
-                    <div class="providers__label">scaleway</div>
+                    <div class="providers__label">
+                        scaleway
+                        <fieldset class="providers__radio-buttons">
+                            <input type="radio" name="multi" value="multi" id="multi" required class="providers__radio-button"><label for="hdd">Multi</label>
+                            <input type="radio" name="single" value="single" id="single" class="providers__radio-button"><label for="ssd">Single</label>
+                        </fieldset>
+                    </div>
                     <div class="providers__logo">
                         <img src="img/logo.png" alt="">
                     </div>
