@@ -47,10 +47,9 @@
                     <div class="providers__label">
                         bunny
                         <fieldset class="providers__radio-buttons">
-                            <input type="radio" name="hdd-ssd" value="hdd" id="hdd" required class="providers__radio-button"><label for="hdd" class="radio-label">HDD</label>
+                            <input type="radio" name="storage-bunny" data-value="0.01" value="HDD" id="hdd" class="providers__radio-button" data-related-progress="bunnyPrice" checked><label for="hdd" class="radio-label">HDD</label>
                             
-                            <input type="radio" name="hdd-ssd" value="ssd" id="ssd" class="providers__radio-button"><label for="ssd" class="radio-label">SSD</label>
-                            
+                            <input type="radio" name="storage-bunny" data-value="0.02" value="SSD" id="ssd" class="providers__radio-button" data-related-progress="bunnyPrice"><label for="ssd" class="radio-label">SSD</label>
                         </fieldset>
                     </div>
                     <div class="providers__logo">
@@ -61,8 +60,8 @@
                     <div class="providers__label">
                         scaleway
                         <fieldset class="providers__radio-buttons">
-                            <input type="radio" name="multi-single" value="multi" id="multi" required class="providers__radio-button"><label for="multi" class="radio-label">Multi</label>
-                            <input type="radio" name="multi-single" value="single" id="single" class="providers__radio-button"><label for="single" class="radio-label">Single</label>
+                            <input type="radio" name="storage-scaleway" data-value="0.06" value="multi" id="multi"  class="providers__radio-button" data-related-progress="scalewayPrice" checked><label for="multi" class="radio-label">Multi</label>
+                            <input type="radio" name="storage-scaleway" data-value="0.03" value="single" id="single" class="providers__radio-button" data-related-progress="scalewayPrice"><label for="single" class="radio-label">Single</label>
                         </fieldset>
                     </div>
                     <div class="providers__logo">
@@ -77,22 +76,22 @@
                 </div>
             </div>
             <div class="price-calc-result__progress">
-                <div class="progress" data-storage-modifier="0.005" data-transfer-modifier="0.01">
+                <div class="progress" id="backblazePrice" data-storage-modifier="0.005" data-transfer-modifier="0.01">
+                    <div class="progress-meter" style="width: 1%"></div>
+                    <div class="progress-price">$7.00</div>
+                </div>
+                
+                <div class="progress" id="bunnyPrice" data-storage-modifier="0.01" data-transfer-modifier="0.01">
                     <div class="progress-meter" style="width: 1%"></div>
                     <div class="progress-price">-</div>
                 </div>
                 
-                <div class="progress" data-storage-modifier="0.01" data-transfer-modifier="0.01">
+                <div class="progress" id="scalewayPrice" data-storage-modifier="0.06" data-transfer-modifier="0.03">
                     <div class="progress-meter" style="width: 1%"></div>
                     <div class="progress-price">-</div>
                 </div>
                 
-                <div class="progress" data-storage-modifier="0.06" data-transfer-modifier="0.03">
-                    <div class="progress-meter" style="width: 1%"></div>
-                    <div class="progress-price">-</div>
-                </div>
-                
-                <div class="progress" data-storage-modifier="0.01" data-transfer-modifier="0.01">
+                <div class="progress" id="vultrPrice" data-storage-modifier="0.01" data-transfer-modifier="0.01">
                     <div class="progress-meter" style="width: 1%"></div>
                     <div class="progress-price">-</div>
                 </div>
